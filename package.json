@@ -5,7 +5,7 @@
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://akshay-rakheja.github.io"
   },
   "keywords": [
     "gatsby"
@@ -58,6 +58,7 @@
     "react-helmet": "^6.1.0",
     "react-transition-group": "^4.3.0",
     "scrollreveal": "^4.0.5",
+    "sharp": "^0.29.3",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
