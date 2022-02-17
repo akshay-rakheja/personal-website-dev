@@ -3,7 +3,7 @@ date: '2016-01-25'
 title: 'Electrical Engineering Co-op'
 company: 'Kohler Power'
 location: 'Sheboygan, WI'
-range: 'Jan - August 2016'
+range: 'Jan 2016 - August 2016'
 url: 'http://www.kohlerpower.com/powerhub/index.htm'
 ---
 

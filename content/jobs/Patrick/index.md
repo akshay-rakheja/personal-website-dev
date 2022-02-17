@@ -3,7 +3,7 @@ date: '2015-06-10'
 title: 'Electrical Automation Intern'
 company: 'Patrick Industries'
 location: 'Elkhart, IN'
-range: 'Jan - August 2015'
+range: 'Jan 2015 - August 2015'
 url: 'https://patrickind.com/'
 ---
 
