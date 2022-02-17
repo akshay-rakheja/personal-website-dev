@@ -2,7 +2,7 @@
 date: '2021-02-01'
 title: 'K-Nearest Neighbors'
 github: 'https://github.com/akshay-rakheja/K-Nearest-Neighbors'
-external: 'http://bchiang7.github.io/fontipsums/'
+external: ''
 tech:
   - Python
   - Sklearn
