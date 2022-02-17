@@ -132,7 +132,7 @@ const About = () => {
   }, [prefersReducedMotion]);
 
   const skills = ['Python','JavaScript', 'Solidity', 'Pinata', 
-                 'Hardhat','Node.js'];
+                 'Hardhat','Tensorflow', 'Numpy', 'R'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
