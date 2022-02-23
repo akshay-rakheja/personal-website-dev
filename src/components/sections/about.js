@@ -1,8 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable indent */
-/* eslint-disable comma-spacing */
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable max-len */
 import React, { useEffect, useRef } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -129,10 +124,9 @@ const About = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, [prefersReducedMotion]);
+  }, []);
 
-  const skills = ['Python','JavaScript', 'Solidity', 'Pinata', 
-                 'Hardhat','Tensorflow', 'Numpy', 'R'];
+  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,30 +136,31 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Akshay and I enjoy analyzing Data and exploring
-              the Web3 stack. I started my career as an Electrical
-              Engineer in the Silicon Valley, working with Contract
-              Manufacturers on custom hardware. Around 2019, I got the
-              opportunity to work at Waymo on their custom built hardware.
-              While debuggin PCB's and running system level tests, the sheer
-              amount of data generated blew my mind and got me attracted to 
-              Machine Learning. This led me to pursue my graduate studies at the {''} 
-              <a href ='https://uwaterloo.ca/electrical-computer-engineering/'> University of Waterloo</a>
-              {' '}where I am specializing in Machine Learning.
+              Hello! My name is Akshay and I enjoy analyzing data and building Decentralized
+              Applications. My interest in Machine Learning started while working at Waymo in 2019
+              while debugging custom PCB's. The sheer amount of data that a AV generated and
+              processed in real time blew my mind. Apart from drawing inferences from a dataset, I
+              also enjoy exploring the Web3 stack.
             </p>
 
             <p>
-              In Spring of 2021, I got the oppurtunity to work with {''}
-              <a href = 'https://uwaterloo.ca/scholar/mcrowley'>Prof. Mark Crowley</a>
-              , University of Waterloo and UWECEML Lab on Driver Behavior Learning. Here, I helped
-              create predictive models that would help model driver behavior in fixed scenarios.
+              Fast-forward to today, and I’ve had the privilege of working at{' '}
+              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
+              <a href="https://starry.com/">a start-up</a>,{' '}
+              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
+              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
+              main focus these days is building accessible, inclusive products and digital
+              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
+              clients.
             </p>
 
             <p>
-              My team and I are also building a NFT marketplace. Checkout its progress{' '} 
-              <a href="https://github.com/connie-ho/beginner-blocs">
-                here
-              </a>.
+              I also recently{' '}
+              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
+                launched a course
+              </a>{' '}
+              that covers everything you need to build a web app with the Spotify API using Node
+              &amp; React.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
