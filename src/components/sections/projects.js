@@ -215,6 +215,7 @@ const Projects = () => {
     const { github, external, title, tech } = frontmatter;
 
     return (
+      
       <div className="project-inner">
         <header>
           <div className="project-top">
@@ -263,9 +264,11 @@ const Projects = () => {
   };
 
   return (
+    <section id="projects">
+      <h2 className="numbered-heading" ref={revealTitle}>
+        Some Things I’ve Built
+      </h2>
     <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
       </Link>
@@ -305,6 +308,7 @@ const Projects = () => {
         Show {showMore ? 'Less' : 'More'}
       </button>
     </StyledProjectsSection>
+    </section>
   );
 };
 

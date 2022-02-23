@@ -1,15 +1,15 @@
 ---
-date: '2016-11-01'
-title: 'Screentime 2.0'
-github: ''
-external: 'https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents'
-android: 'https://play.google.com/store/apps/details?id=com.starry.management&hl=en_US'
+date: '2021-02-01'
+title: 'Vertex Cover Problem'
+github: 'https://github.com/akshay-rakheja/Vertex-cover-problem'
+external: ''
+android: ''
 tech:
-  - Cordova
-  - Backbone
-  - Marionette
-company: 'Starry'
+  - C++
+  - Python
+  - Numpy
+company: ''
 showInProjects: true
 ---
 
-Starry Station android app feature that provided users with the ability to easily filter content, pause the internet, and even create custom rules for blocking apps like Facebook and Twitter right from their phones.
+Worked on an optimization problem to help a local police department minimize installation of traffic cameras at intersections
