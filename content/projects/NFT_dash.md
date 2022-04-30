@@ -1,5 +1,5 @@
 ---
-date: '2022-11-01'
+date: '2022-02-01'
 title: 'NFT Dashboard'
 github: 'https://github.com/akshay-rakheja/OpenSea_NFT_dash'
 external: ''
