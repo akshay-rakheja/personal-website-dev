@@ -160,9 +160,16 @@ const About = () => {
               , University of Waterloo and UWECEML Lab on Driver Behavior Learning. Here, I helped
               create predictive models that would help model driver behavior in fixed scenarios.
             </p>
+            <p>
+              Recently, I participated in the Web3Con, a hackathon hosted by Developer DAO. My team and I built {''} 
+              <a href = "">Time Limited Tokens</a>, a reference implementaion of smart contracts that allow users to atomically
+              limit rights to their ERC-721 assets. We won the 3rd place bounty from IPFS/Filecoin for our implementation and 
+              were also granted a <a href ="https://github.com/ipfs/devgrants/issues/167">Microgrant</a> to further the development of this project. We intend to submit an Ethereum Improvement Proposal (EIP) 
+              soon.
+            </p>
 
             <p>
-              My team and I are also building a NFT marketplace. Checkout its progress{' '} 
+              My team and I also built a NFT marketplace. Check it out {' '} 
               <a href="https://github.com/connie-ho/beginner-blocs">
                 here
               </a>.
