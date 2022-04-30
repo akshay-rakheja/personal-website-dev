@@ -9,3 +9,4 @@ url: 'https://alpaca.markets/'
 
 - Develop, maintain and release a publishing cadence related to building products with Alpaca (both code and blogs)
 - Track using metrics the performance of said product launches
+- Collaborate with the growth and developer experience teams to quantify the ins and outs of Alpaca's business
