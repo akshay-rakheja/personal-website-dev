@@ -150,12 +150,12 @@ const About = () => {
               {' '}where I am specializing in Machine Learning.
             </p>
             <p>
-              After graduating from Waterloo, I am currently working at <a href ="https://alpaca.markets">Alpaca Markets</a> as a Growth Engineer. At Alpaca, I am building
+              After graduating from Waterloo, I started working at <a href ="https://alpaca.markets">Alpaca Markets</a> as a Growth Engineer. At Alpaca, I am building
               custom integrations to add more channels for our users to trade on. I am also building trading algorithms that can be used by
               our users to automate their trading strategies. Check out some of my trading strategies in this <a href="https://alpaca.markets/learn/author/akshay/">blog</a>.
             </p>
             <p>
-              Over the course of last 7 months, I have been actively participating in Web3 Hackathons. My team and I have built projects
+              Over the course of last few months, I have been actively participating in Web3 Hackathons. My team and I have built projects
               that have won prizes and grants in each of the hackathons we have participated in. These hackathons include the{' '}
               <a href="https://www.web3con.dev/">Web3Con</a>,{' '}
               <a href="https://supernova.devpost.com/">Supernova</a>,{' '}
@@ -163,6 +163,11 @@ const About = () => {
               <a href="https://showcase.ethglobal.com/hackfs">HackFS</a> and {' '}
               <a href="https://buidlit.polygon.technology/">Buidl It</a>.<br></br>
             </p>
+            <p>
+              At the moment, I am engaging with potential customers for Polydocs to help clients manage their legal agreements on chain.
+              Polydocs is also participating in Encode Club's <a href="https://www.encode.club/polygon-accelerator">Polygon Accelerator</a> program.
+              </p>
+
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
