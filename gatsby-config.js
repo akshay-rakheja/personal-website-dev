@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Akshay Rakheja',
     description:
-      'Akshay Rakheja is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://akshayrakheja.com', // No trailing slash allowed!
+      'Akshay Rakheja is a Product engineer who specializes in building Web3 Applications.',
+    siteUrl: 'https://akshay-rakheja.github.io/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@akshayrakheja_',
   },

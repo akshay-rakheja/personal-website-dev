@@ -144,24 +144,20 @@ const About = () => {
             <p>
               Hello! My name is Akshay and I enjoy analyzing Data and exploring
               the Web3 stack. I started my career as an Electrical
-              Engineer in the Silicon Valley, working with Contract
-              Manufacturers on custom hardware. Around 2019, I got the
-              opportunity to work at Waymo on their custom built hardware.
-              While debuggin PCB's and running system level tests, the sheer
-              amount of data generated blew my mind and got me attracted to 
-              Machine Learning. This led me to pursue my graduate studies at the {''} 
+              Engineer in the Silicon Valley, working on custom hardware for companies like Waymo.
+              Working at Waymo sparked my interest in Data Science that led me to pursue my graduate studies at the {''} 
               <a href ='https://uwaterloo.ca/electrical-computer-engineering/'> University of Waterloo</a>
               {' '}where I am specializing in Machine Learning.
             </p>
-
             <p>
-              In Spring of 2021, I got the oppurtunity to work with {''}
-              <a href = 'https://uwaterloo.ca/scholar/mcrowley'>Prof. Mark Crowley</a>
-              , University of Waterloo and UWECEML Lab on Driver Behavior Learning. Here, I helped
-              create predictive models that would help model driver behavior in fixed scenarios.
+              After graduating from Waterloo, I am currently working at <a href ="https://alpaca.markets">Alpaca Markets</a> as a Growth Engineer. At Alpaca, I am building
+              custom integrations to add more channels for our users to trade on. I am also building trading algorithms that can be used by
+              our users to automate their trading strategies. Check out some of my trading strategies in this <a href="https://alpaca.markets/learn/author/akshay/">blog</a>.
             </p>
             <p>
-              Recently, I participated in the Web3Con, a hackathon hosted by Developer DAO. My team and I built {''} 
+              Over the course of last 7 months, I have been actively participating in Web3 Hackathons. My team and I have built projects
+              
+
               <a href = "">Time Limited Tokens</a>, a reference implementaion of smart contracts that allow users to atomically
               limit rights to their ERC-721 assets. We won the 3rd place bounty from IPFS/Filecoin for our implementation and 
               were also granted a <a href ="https://github.com/ipfs/devgrants/issues/167">Microgrant</a> to further the development of this project. We intend to submit an Ethereum Improvement Proposal (EIP) 

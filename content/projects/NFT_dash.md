@@ -8,7 +8,7 @@ tech:
   - Streamlit
   - Python
 company: ''
-showInProjects: true
+showInProjects: false
 ---
 
 Building a NFT Dashboard using Streamlit and Opensea API

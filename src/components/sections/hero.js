@@ -60,13 +60,12 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Akshay Rakheja.</h2>;
-  const three = <h3 className="big-heading">I am a Software Engineer.</h3>;
+  const three = <h3 className="big-heading">I am a Product Engineer.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m learning Solidity, Javascript and building
-        human-centered decentralized applications for Web3.
+        I’m a Product engineer specializing in building Web3 Applications. Currently, I’m working at Alpaca Markets where I am building Web3 use cases for their APIs. After work, I enjoy building 
+        Web3 products for Hackathons where my team and I have been grateful to win multiple prizes and grants. 
       </p>
     </>
   );

@@ -8,7 +8,7 @@ tech:
   - Solidity
   - Javascript
 company: ''
-showInProjects: true
+showInProjects: false
 ---
 
 Created a simple NFT Minting App on the Ropsten test network
