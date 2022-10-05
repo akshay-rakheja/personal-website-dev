@@ -11,4 +11,6 @@ company: 'Internet Computer'
 showInProjects: true
 ---
 
-Unstoppable scheduling service for the Internet Computer
+Unstoppable scheduling service for the Internet Computer.
+
+Placed 4th for Blue Sky category at Supernova Hackathon.

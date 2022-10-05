@@ -8,8 +8,10 @@ tech:
   - Typescript
   - Hardhat
   - IPFS
-company: 'Polydocs'
+company: 'EthGlobal'
 showInProjects: true
 ---
 
-Smart Documents for Smart Contracts
+Smart Documents for Smart Contracts.
+
+Placed Finalist at EthGlobal's HackFS Hackathon and won the pool prize from IPFS/Filecoin at Polygon's Buidl It Hackathon.

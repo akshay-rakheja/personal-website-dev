@@ -131,8 +131,8 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, [prefersReducedMotion]);
 
-  const skills = ['Python','JavaScript', 'Solidity', 'Pinata', 
-                 'Hardhat','Tensorflow', 'Numpy', 'R'];
+  const skills = ['Solidity','Python','JavaScript', 'Typescript', 'Nft.storage', 
+                 'Hardhat','IPFS', 'Tensorflow', 'React', 'Gatsby', 'Node.js'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -156,21 +156,13 @@ const About = () => {
             </p>
             <p>
               Over the course of last 7 months, I have been actively participating in Web3 Hackathons. My team and I have built projects
-              
-
-              <a href = "">Time Limited Tokens</a>, a reference implementaion of smart contracts that allow users to atomically
-              limit rights to their ERC-721 assets. We won the 3rd place bounty from IPFS/Filecoin for our implementation and 
-              were also granted a <a href ="https://github.com/ipfs/devgrants/issues/167">Microgrant</a> to further the development of this project. We intend to submit an Ethereum Improvement Proposal (EIP) 
-              soon.
+              that have won prizes and grants in each of the hackathons we have participated in. These hackathons include the{' '}
+              <a href="https://www.web3con.dev/">Web3Con</a>,{' '}
+              <a href="https://supernova.devpost.com/">Supernova</a>,{' '}
+              <a href="https://chainlinkspring2022.devpost.com/">Chainlink Spring 2022 Hackathon</a>,{' '}
+              <a href="https://showcase.ethglobal.com/hackfs">HackFS</a> and {' '}
+              <a href="https://buidlit.polygon.technology/">Buidl It</a>.<br></br>
             </p>
-
-            <p>
-              My team and I also built a NFT marketplace. Check it out {' '} 
-              <a href="https://github.com/connie-ho/beginner-blocs">
-                here
-              </a>.
-            </p>
-
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 

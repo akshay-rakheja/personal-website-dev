@@ -11,4 +11,6 @@ company: 'Web3Con'
 showInProjects: true
 ---
 
-Added Time Limited rights to ERC-721 tokens that allows for atomic leasing
+Added Time Limited rights to ERC-721 tokens that allows for atomic leasing.
+
+Placed 3rd for IPFS/Filecoin bounty followed by a Next-step grant by Protocol Labs.
