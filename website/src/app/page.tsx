@@ -70,38 +70,20 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6"
-            >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
               My Expertise
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-lg text-gray-700 dark:text-gray-300"
-            >
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300">
               I specialize in developing AI-powered solutions that solve real
               business problems. With a strong foundation in software
               engineering and AI/ML, I can help you build scalable and efficient
               applications.
-            </motion.p>
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Expertise 1 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
-            >
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <FiCode className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
@@ -112,16 +94,10 @@ export default function Home() {
                 Building custom AI solutions using RAG, LangChain, and other
                 advanced AI frameworks to solve complex business problems.
               </p>
-            </motion.div>
+            </div>
 
             {/* Expertise 2 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
-            >
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <FiDatabase className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
@@ -132,16 +108,10 @@ export default function Home() {
                 Designing scalable cloud architectures on GCP and AWS,
                 optimizing for performance, cost, and security.
               </p>
-            </motion.div>
+            </div>
 
             {/* Expertise 3 */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
-            >
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <FiCpu className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
@@ -152,7 +122,7 @@ export default function Home() {
                 Building machine learning systems that scale, from initial
                 prototype to production deployment.
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

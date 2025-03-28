@@ -228,8 +228,9 @@ export default function Consulting() {
                     <FiCalendar className="mr-2" /> Schedule a Call
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Select a time slot for a 30-minute discovery call. No
-                    payment is required for the initial consultation.
+                    Select a time slot for a 60-minute discovery call. No
+                    payment is required for the initial consultation. Available
+                    times can be viewed on Calendly.
                   </p>
 
                   {/* Calendar Widget */}
@@ -243,12 +244,13 @@ export default function Consulting() {
                       />
                     </div>
                     <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2">
-                      Calendar preview - Select a time that works for you
+                      Calendar preview - Click "View Available Times" to see
+                      available slots on Calendly
                     </p>
                   </div>
 
                   <a
-                    href="https://calendly.com/akshay-rakheja"
+                    href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
