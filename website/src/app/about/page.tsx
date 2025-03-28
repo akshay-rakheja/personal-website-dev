@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import { FiDownload, FiAward, FiBook, FiCode } from "react-icons/fi";
@@ -28,7 +27,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-700 dark:text-gray-300"
             >
-              Innovative software engineer with a Master's in AI/ML and a
+              Innovative software engineer with a Master&apos;s in AI/ML and a
               passion for building products that drive business value through AI
               and automation. Proven track record of delivering impactful
               solutions, including 8 hackathon wins in AI and blockchain.
@@ -52,115 +51,169 @@ export default function About() {
               viewport={{ once: true }}
               className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                Sr. Software Engineer
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                CGI – Toronto, Ontario | Nov 2024 – Present
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>
-                  Developed and maintained experience APIs using Moveworks'
-                  Creator Studio, enhancing system scalability and user
-                  experience through seamless ServiceNow integration.
-                </li>
-                <li>
-                  Integrated REST APIs with Moveworks to enhance data
-                  aggregation, automate workflows, and improve system
-                  efficiency.
-                </li>
-                <li>
-                  Led periodic access review campaigns with cross-functional
-                  teams, improving compliance and data security.
-                </li>
-              </ul>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/logo-cgi.png"
+                    alt="CGI"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Sr. Software Engineer
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    CGI – Toronto, Ontario | Nov 2024 – Present
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>
+                      Developed and maintained experience APIs using
+                      Moveworks&apos; Creator Studio, enhancing system
+                      scalability and user experience through seamless
+                      ServiceNow integration.
+                    </li>
+                    <li>
+                      Integrated REST APIs with Moveworks to enhance data
+                      aggregation, automate workflows, and improve system
+                      efficiency.
+                    </li>
+                    <li>
+                      Led periodic access review campaigns with cross-functional
+                      teams, improving compliance and data security.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
 
             {/* Immigrate.ai */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
               className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                Software Engineer
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                Immigrate.ai – Etobicoke, Ontario | Mar 2023 – Oct 2024
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>
-                  Developed a Chrome Extension that reduced webform filing time
-                  by 95%, improving productivity and accuracy.
-                </li>
-                <li>
-                  Built an agentic microservice that generates fully researched
-                  and cited business documents, streamlining documentation
-                  processes.
-                </li>
-                <li>
-                  Integrated a Graph RAG-powered Q/A bot into ERP, reducing user
-                  query resolution time by 30%.
-                </li>
-                <li>
-                  Created DocCheck, an OCR tool for validating unstructured
-                  documents, enhancing application review efficiency.
-                </li>
-              </ul>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/logo-immigrate.png"
+                    alt="Immigrate.ai"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Software Engineer
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Immigrate.ai – Etobicoke, Ontario | Mar 2023 – Oct 2024
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>
+                      Developed a Chrome Extension that reduced webform filing
+                      time by 95%, improving productivity and accuracy.
+                    </li>
+                    <li>
+                      Built an agentic microservice that generates fully
+                      researched and cited business documents, streamlining
+                      documentation processes.
+                    </li>
+                    <li>
+                      Integrated a Graph RAG-powered Q/A bot into ERP, reducing
+                      user query resolution time by 30%.
+                    </li>
+                    <li>
+                      Created DocCheck, an OCR tool for validating unstructured
+                      documents, enhancing application review efficiency.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
 
             {/* Pronti AI */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
               className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                Software Engineer
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                Pronti AI – Toronto, Ontario | Nov 2022 – Jan 2023
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>
-                  Resolved lazy user engagement issue, driving downloads beyond
-                  1 million.
-                </li>
-                <li>
-                  Designed a GCP-hosted microservice using Gmail parsing and
-                  ResNet18 for image classification, auto-populating a virtual
-                  app closet.
-                </li>
-              </ul>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/logo-pronti.png"
+                    alt="Pronti AI"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Software Engineer
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Pronti AI – Toronto, Ontario | Nov 2022 – Jan 2023
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>
+                      Resolved lazy user engagement issue, driving downloads
+                      beyond 1 million.
+                    </li>
+                    <li>
+                      Designed a GCP-hosted microservice using Gmail parsing and
+                      ResNet18 for image classification, auto-populating a
+                      virtual app closet.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
 
             {/* Alpaca Markets */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
               className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                Growth Product Manager Intern
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                Alpaca Markets – Toronto, Ontario | Apr 2022 – Oct 2022
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                <li>
-                  Built a Slack integration for executing trades within Slack.
-                </li>
-                <li>
-                  Authored technical blogs with code samples, resulting in ~45%
-                  increase in Crypto API usage.
-                </li>
-              </ul>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/logo-alpaca.png"
+                    alt="Alpaca Markets"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    Growth Product Manager Intern
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Alpaca Markets – Toronto, Ontario | Apr 2022 – Oct 2022
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                    <li>
+                      Built a Slack integration for executing trades within
+                      Slack.
+                    </li>
+                    <li>
+                      Authored technical blogs with code samples, resulting in
+                      ~45% increase in Crypto API usage.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
           </div>
 

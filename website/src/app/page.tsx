@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import { FiArrowRight, FiCode, FiDatabase, FiCpu } from "react-icons/fi";
@@ -51,10 +52,14 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl"
               >
-                {/* Replace with your own image */}
-                <div className="w-full h-full bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
-                  <span className="text-3xl text-white font-bold">AR</span>
-                </div>
+                {/* Using an actual profile image */}
+                <Image
+                  src="/profile.jpg"
+                  alt="Akshay Rakheja"
+                  fill
+                  style={{ objectFit: "cover" }}
+                  priority
+                />
               </motion.div>
             </div>
           </div>

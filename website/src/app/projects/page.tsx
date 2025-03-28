@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
-import { FiGithub, FiExternalLink, FiAward, FiCode } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiAward } from "react-icons/fi";
 
 // Project categories for filtering
 const categories = ["All", "Hackathon", "AI/ML", "Trading", "Blockchain"];
@@ -17,7 +17,8 @@ const projects = [
     description:
       "A React+TS web app to create semantically searchable video clips of chessboxing matches.",
     category: ["Hackathon", "AI/ML"],
-    image: "bg-gradient-to-r from-blue-400 to-indigo-500",
+    image: "/projects/twelve-labs.jpg",
+    imageAlt: "Twelve Labs Video Search Project",
     githubUrl: "#",
     demoUrl: "#",
     isHackathonWinner: true,
@@ -36,7 +37,8 @@ const projects = [
     description:
       "A private AI solution on GCP for audio imports and meeting summarization.",
     category: ["Hackathon", "AI/ML"],
-    image: "bg-gradient-to-r from-purple-400 to-pink-500",
+    image: "/projects/vertex-ai.jpg",
+    imageAlt: "Google Vertex AI Project",
     githubUrl: "#",
     demoUrl: "#",
     isHackathonWinner: false,
@@ -54,7 +56,8 @@ const projects = [
     description:
       "Integration of AI21 language models with no-code tools for complex automation.",
     category: ["Hackathon", "AI/ML"],
-    image: "bg-gradient-to-r from-yellow-400 to-orange-500",
+    image: "/projects/ai21-labs.jpg",
+    imageAlt: "AI21 Labs Integration Project",
     githubUrl: "#",
     demoUrl: "#",
     isHackathonWinner: true,
@@ -72,7 +75,8 @@ const projects = [
     description:
       "A trading system that identifies and executes on arbitrage opportunities between decentralized and centralized exchanges.",
     category: ["Trading", "Blockchain"],
-    image: "bg-gradient-to-r from-green-400 to-emerald-500",
+    image: "/projects/dex-cex.jpg",
+    imageAlt: "DEX-CEX Arbitrage Project",
     githubUrl: "https://github.com/akshay-rakheja/arbitrage-alpaca",
     technologies: ["Python", "Alpaca API", "DEX", "Blockchain"],
     details: [
@@ -87,7 +91,8 @@ const projects = [
     description:
       "A monorepo for various trading algorithms and strategies, showcasing quantitative finance expertise.",
     category: ["Trading"],
-    image: "bg-gradient-to-r from-blue-400 to-cyan-500",
+    image: "/projects/trading-algos.png",
+    imageAlt: "Trading Algorithms Project",
     githubUrl: "https://github.com/akshay-rakheja/Trading-Algos",
     technologies: ["Python", "Algorithms", "Quantitative Finance"],
     details: [
@@ -102,7 +107,8 @@ const projects = [
     description:
       "A protocol for immutable, dynamic documents using IPFS and Polygon.",
     category: ["Hackathon", "Blockchain"],
-    image: "bg-gradient-to-r from-indigo-400 to-blue-500",
+    image: "/projects/polynodes.jpg",
+    imageAlt: "PolyNodes Project",
     githubUrl: "https://github.com/rhdeck/chainlink2022",
     demoUrl: "#",
     isHackathonWinner: true,
@@ -179,12 +185,15 @@ export default function Projects() {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
               >
-                <div
-                  className={`h-48 ${project.image} flex items-center justify-center text-white text-xl font-bold p-6 text-center`}
-                >
-                  {project.title}
+                <div className="h-48 relative">
+                  <Image
+                    src={project.image}
+                    alt={project.imageAlt}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                   {project.isHackathonWinner && (
-                    <div className="absolute top-4 right-4 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full flex items-center">
+                    <div className="absolute top-4 right-4 bg-yellow-500 text-white text-xs px-2 py-1 rounded-full flex items-center z-10">
                       <FiAward className="mr-1" />
                       {project.hackathonPlace || "Winner"}
                     </div>

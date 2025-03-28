@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import { FiCheck, FiCalendar, FiMail, FiClock } from "react-icons/fi";
@@ -144,7 +145,7 @@ export default function Consulting() {
                     </h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    We'll start with a discovery call to understand your
+                    We&apos;ll start with a discovery call to understand your
                     challenges, goals, and requirements. This helps me tailor a
                     solution specific to your needs.
                   </p>
@@ -166,7 +167,7 @@ export default function Consulting() {
                     </h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    After the initial consultation, I'll provide a proposal
+                    After the initial consultation, I&apos;ll provide a proposal
                     outlining the scope, timeline, and cost. Once agreed, we can
                     begin the work.
                   </p>
@@ -188,9 +189,9 @@ export default function Consulting() {
                     </h3>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    I'll keep you updated on progress with regular check-ins and
-                    deliver high-quality solutions on schedule. I'm committed to
-                    ensuring your satisfaction.
+                    I&apos;ll keep you updated on progress with regular
+                    check-ins and deliver high-quality solutions on schedule.
+                    I&apos;m committed to ensuring your satisfaction.
                   </p>
                 </motion.div>
               </div>
@@ -230,8 +231,26 @@ export default function Consulting() {
                     Select a time slot for a 30-minute discovery call. No
                     payment is required for the initial consultation.
                   </p>
+
+                  {/* Calendar Widget */}
+                  <div className="bg-white dark:bg-gray-700 p-4 rounded-md mb-6">
+                    <div className="aspect-video relative">
+                      <Image
+                        src="/calendar-widget.png"
+                        alt="Appointment Calendar"
+                        fill
+                        style={{ objectFit: "contain" }}
+                      />
+                    </div>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2">
+                      Calendar preview - Select a time that works for you
+                    </p>
+                  </div>
+
                   <a
-                    href="#"
+                    href="https://calendly.com/akshay-rakheja"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
                     View Available Times
@@ -262,7 +281,7 @@ export default function Consulting() {
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="text-blue-300 mr-3 mt-1" />
-                    <span>Master's degree in AI/ML specialization</span>
+                    <span>Master&apos;s degree in AI/ML specialization</span>
                   </li>
                   <li className="flex items-start">
                     <FiCheck className="text-blue-300 mr-3 mt-1" />
