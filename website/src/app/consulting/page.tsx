@@ -4,7 +4,13 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
-import { FiCheck, FiCalendar, FiMail, FiClock } from "react-icons/fi";
+import {
+  FiCheck,
+  FiCalendar,
+  FiMail,
+  FiClock,
+  FiArrowRight,
+} from "react-icons/fi";
 
 export default function Consulting() {
   return (
@@ -227,35 +233,19 @@ export default function Consulting() {
                   <h3 className="flex items-center text-xl font-bold text-gray-900 dark:text-white mb-4">
                     <FiCalendar className="mr-2" /> Schedule a Call
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Select a time slot for a 60-minute discovery call. No
-                    payment is required for the initial consultation. Available
-                    times can be viewed on Calendly.
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">
+                    Select a time slot for a 60-minute discovery call through my
+                    Calendly scheduling page. No payment is required for the
+                    initial consultation.
                   </p>
-
-                  {/* Calendar Widget */}
-                  <div className="bg-white dark:bg-gray-700 p-4 rounded-md mb-6">
-                    <div className="aspect-video relative">
-                      <Image
-                        src="/calendar-widget.png"
-                        alt="Appointment Calendar"
-                        fill
-                        style={{ objectFit: "contain" }}
-                      />
-                    </div>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-2">
-                      Calendar preview - Click "View Available Times" to see
-                      available slots on Calendly
-                    </p>
-                  </div>
 
                   <a
                     href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
+                    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
                   >
-                    View Available Times
+                    Schedule a Meeting <FiArrowRight className="ml-2" />
                   </a>
                 </div>
               </div>
