@@ -1,54 +1,94 @@
-## 🛠 Installation & Set Up
+# Akshay Rakheja's Personal Website
 
-1. Install the Gatsby CLI
+A modern personal website built with Next.js and Tailwind CSS, showcasing professional experience, projects, and consulting services.
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+## Features
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+- **Responsive Design**: Looks great on all devices (desktop, tablet, mobile)
+- **Modern UI**: Clean, professional design with animations
+- **Dark Mode Support**: Automatic theme detection
+- **Fast Loading**: Built with performance in mind
+- **SEO Optimized**: Structured for better search engine performance
+- **GitHub Pages Deployment**: Easy deployment workflow
 
-   ```sh
-   nvm install
-   ```
+## Pages
 
-3. Install dependencies
+- **Home**: Introduction, expertise areas, and featured projects
+- **About**: Detailed professional experience, hackathon wins, education, and skills
+- **Projects**: Showcase of technical projects with filtering capability
+- **Consulting**: Services offered, process, and booking information
 
-   ```sh
-   yarn
-   ```
+## Tech Stack
 
-4. Start the development server
+- **Framework**: Next.js 13 (with App Router)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **UI Components**: Headless UI
+- **Deployment**: GitHub Pages
 
-   ```sh
-   npm start
-   ```
+## Getting Started
 
-## 🚀 Building and Running for Production
+### Prerequisites
 
-1. Generate a full static production build
+- Node.js 18 or higher
+- npm or yarn
 
-   ```sh
-   npm run build
-   ```
+### Installation
 
-1. Preview the site as it will appear once deployed
+1. Clone the repository:
 
-   ```sh
-   npm run serve
-   ```
+```bash
+git clone https://github.com/yourusername/personal-website.git
+cd personal-website
+```
 
-## 🎨 Color Reference
+2. Install dependencies:
 
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+```bash
+npm install
+# or
+yarn install
+```
 
+3. Start the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Deployment
+
+This website is configured for easy deployment to GitHub Pages:
+
+1. Push your changes to the main branch:
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+2. The GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically build and deploy the site to GitHub Pages.
+
+## Customization
+
+- Update content in the page files (`src/app/page.tsx`, `src/app/about/page.tsx`, etc.)
+- Modify styling in the component files and Tailwind config
+- Add your own images in the `public/images` directory
+- Update your resume file at `public/Resume_Akshay_Rakheja_March_2025.pdf`
+
+## License
+
+MIT
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/) 
