@@ -25,7 +25,7 @@ export default function Footer() {
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/akshayrakheja"
+              href="https://github.com/akshay-rakheja"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors"

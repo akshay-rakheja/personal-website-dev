@@ -251,8 +251,8 @@ export default function Projects() {
           </div>
 
           {/* GitHub CTA */}
-          <div className="mt-16 text-center">
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <div className="text-center mt-16">
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">
               See more of my projects on GitHub
             </p>
             <a
