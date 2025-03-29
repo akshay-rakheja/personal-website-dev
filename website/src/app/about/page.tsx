@@ -394,15 +394,28 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="mb-8 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
+              className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                M.Eng, Electrical and Computer Engineering – AI/ML
-                Specialization
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                University of Waterloo | 2022
-              </p>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/waterloo-logo.png"
+                    alt="University of Waterloo"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    M.Eng, Electrical and Computer Engineering – AI/ML
+                    Specialization
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    University of Waterloo | 2022
+                  </p>
+                </div>
+              </div>
             </motion.div>
 
             {/* Purdue */}
@@ -411,14 +424,27 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="mb-8 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
+              className="mb-12 border-l-2 border-blue-600 dark:border-blue-400 pl-6"
             >
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                BSc. Electrical Engineering
-              </h3>
-              <p className="text-blue-600 dark:text-blue-400 mb-2">
-                Purdue University | 2016
-              </p>
+              <div className="flex items-start">
+                <div className="hidden sm:block flex-shrink-0 mr-6">
+                  <Image
+                    src="/purdue-logo.png"
+                    alt="Purdue University"
+                    width={60}
+                    height={60}
+                    className="rounded"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                    BSc. Electrical Engineering
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2">
+                    Purdue University | 2016
+                  </p>
+                </div>
+              </div>
             </motion.div>
           </div>
 
