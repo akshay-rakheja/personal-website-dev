@@ -1,8 +1,8 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 // User's Google Analytics measurement ID
 const GA_MEASUREMENT_ID = "G-8PR2G1QRH0";
@@ -21,20 +21,20 @@ declare global {
 
 export function Analytics() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (!GA_MEASUREMENT_ID) return;
+    setMounted(true);
+  }, []);
 
-    const url =
-      pathname +
-      (searchParams?.toString() ? `?${searchParams.toString()}` : "");
+  useEffect(() => {
+    if (!GA_MEASUREMENT_ID || !mounted) return;
 
     // Trigger pageview event when route changes
     window.gtag?.("config", GA_MEASUREMENT_ID, {
-      page_path: url,
+      page_path: pathname,
     });
-  }, [pathname, searchParams]);
+  }, [pathname, mounted]);
 
   return (
     <>
