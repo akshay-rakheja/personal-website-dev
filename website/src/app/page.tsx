@@ -5,7 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
-import { FiArrowRight, FiCode, FiDatabase, FiCpu } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiCode,
+  FiDatabase,
+  FiCpu,
+  FiCalendar,
+} from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -37,6 +43,14 @@ export default function Home() {
                   >
                     About Me <FiArrowRight className="ml-2" />
                   </Link>
+                  <a
+                    href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
+                  >
+                    Schedule a Call <FiCalendar className="ml-2" />
+                  </a>
                   <Link href="/projects" passHref legacyBehavior>
                     <a className="inline-flex items-center bg-white hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-md font-medium transition-colors">
                       View Projects <FiArrowRight className="ml-2" />
