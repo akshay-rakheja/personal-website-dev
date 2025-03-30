@@ -19,7 +19,7 @@ export default function Footer() {
               Akshay Rakheja
             </Link>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
-              Software Engineer & AI Consultant
+              AI Builder & Consultant
             </p>
           </div>
 

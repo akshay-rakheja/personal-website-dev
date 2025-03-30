@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akshay Rakheja - Software Engineer & AI Consultant",
-  description:
-    "Personal website of Akshay Rakheja, Software Engineer & AI Consultant",
+  title: "Akshay Rakheja - AI Builder & Consultant",
+  description: "Personal website of Akshay Rakheja, AI Builder & Consultant",
 };
 
 export default function RootLayout({
