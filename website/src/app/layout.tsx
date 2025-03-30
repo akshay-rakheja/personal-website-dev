@@ -14,7 +14,33 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Akshay Rakheja - AI Builder & Consultant",
-  description: "Personal website of Akshay Rakheja, AI Builder & Consultant",
+  description:
+    "Personal website of Akshay Rakheja, AI Builder & Consultant specialized in AI solution development, cloud architecture, and ML engineering.",
+  keywords: [
+    "AI Builder",
+    "AI Consultant",
+    "Machine Learning Engineer",
+    "Hackathon Winner",
+    "Cloud Architecture",
+  ],
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://rakheja.xyz",
+  },
+  openGraph: {
+    title: "Akshay Rakheja - AI Builder & Consultant",
+    description:
+      "Personal website of Akshay Rakheja, AI Builder & Consultant specialized in AI solution development.",
+    url: "https://rakheja.xyz",
+    siteName: "Akshay Rakheja",
+    images: [
+      {
+        url: "https://rakheja.xyz/profile.jpg",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
