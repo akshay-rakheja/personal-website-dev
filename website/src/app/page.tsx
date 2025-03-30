@@ -30,7 +30,7 @@ export default function Home() {
                   Akshay Rakheja
                 </h1>
                 <p className="text-xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
-                  Software Engineer & AI Consultant
+                  AI Builder & Consultant
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-lg">
                   8X Hackathon Winner • AI/ML Engineer • Building products that
