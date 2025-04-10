@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
+import Testimonials from "@/components/Testimonials";
 import {
   FiArrowRight,
   FiCode,
@@ -85,13 +86,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-              My Expertise
+              How I Can Help You
             </h2>
             <p className="text-lg text-gray-700 dark:text-gray-300">
-              I specialize in developing AI-powered solutions that solve real
-              business problems. With a strong foundation in software
-              engineering and AI/ML, I can help you build scalable and efficient
-              applications.
+              Proven track record of building innovative AI solutions and
+              scalable architectures. From concept to production, I help
+              businesses leverage cutting-edge technology to solve real-world
+              problems.
             </p>
           </div>
 
@@ -99,47 +100,54 @@ export default function Home() {
             {/* Expertise 1 */}
             <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <FiCode className="text-blue-600 dark:text-blue-400 text-2xl" />
+                <FiCpu className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                AI Solution Development
+                AI Integration & Development
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Building custom AI solutions using RAG, LangChain, and other
-                advanced AI frameworks to solve complex business problems.
+                Transform your business with custom AI solutions. Expertise in
+                RAG systems, LLM integration, and intelligent automation. Proven
+                success with Vertex AI, LangChain, and custom AI agents.
               </p>
             </div>
 
             {/* Expertise 2 */}
             <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <FiDatabase className="text-blue-600 dark:text-blue-400 text-2xl" />
+                <FiCode className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                Cloud Architecture
+                Full-Stack Architecture
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Designing scalable cloud architectures on GCP and AWS,
-                optimizing for performance, cost, and security.
+                Design and build scalable, production-ready applications.
+                Specialized in serverless architectures, cloud-native solutions,
+                and enterprise integrations that deliver real business value.
               </p>
             </div>
 
             {/* Expertise 3 */}
             <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <FiCpu className="text-blue-600 dark:text-blue-400 text-2xl" />
+                <FiDatabase className="text-blue-600 dark:text-blue-400 text-2xl" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                ML Engineering
+                Web3 & Blockchain Solutions
               </h3>
               <p className="text-gray-700 dark:text-gray-300">
-                Building machine learning systems that scale, from initial
-                prototype to production deployment.
+                Award-winning blockchain development experience. From smart
+                contract automation to DeFi solutions, I help businesses
+                innovate with Web3 technology. Multiple hackathon wins with
+                Chainlink and DFINITY.
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-blue-600 dark:bg-blue-700">

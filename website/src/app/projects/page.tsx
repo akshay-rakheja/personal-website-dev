@@ -114,8 +114,8 @@ const projects = [
     githubUrl: "https://github.com/rhdeck/chainlink2022",
     demoUrl: "https://devpost.com/software/polynodes",
     isHackathonWinner: true,
-    hackathonName: "Chainlink Fall Hackathon",
-    hackathonPlace: "1st Place",
+    hackathonName: "Chainlink Spring 2022 Hackathon",
+    hackathonPlace: "2nd Place",
     technologies: ["JavaScript", "Blockchain", "Polygon", "IPFS"],
     details: [
       "Created a no-code platform linking smart contracts with off-chain webhooks via Chainlink Oracles.",

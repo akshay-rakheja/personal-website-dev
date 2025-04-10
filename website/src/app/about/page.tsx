@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import { FiDownload, FiAward, FiBook, FiCode } from "react-icons/fi";
+import { FaTrophy } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -227,7 +228,7 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Hackathon 1 */}
+              {/* Twelve Labs Hackathon */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -235,145 +236,296 @@ export default function About() {
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <div className="flex items-center mb-4">
-                  <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mr-2">
-                    1ST PLACE
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    Twelve Labs Weekend Hackathon
-                  </h3>
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/projects/twelve-labs.jpg"
+                      alt="Twelve Labs"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">1st Place</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Twelve Labs Weekend Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">May 2024</p>
+                  </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  May 2024
-                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
                   <li>
-                    Built a React+TS web app to create semantically searchable
-                    video clips of chessboxing matches.
+                    Built a React+TS web app for semantically searchable
+                    chessboxing clips
                   </li>
                   <li>
-                    Integrated Marengo video understanding models for precise
-                    search (e.g., knockouts/checkmates).
+                    Integrated Marengo models for precise search and
+                    AI-generated music
                   </li>
-                  <li>Used FFmpeg to overlay AI-generated music on clips.</li>
                 </ul>
                 <a
-                  href="#"
-                  className="text-blue-600 dark:text-blue-400 font-medium"
+                  href="https://lablab.ai/event/twelve-labs-weekend-hackathon/state-change-labs/grandmaster-gladiators-chessboxing-ai-insights"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
                 >
-                  View Demo
+                  View Project
                 </a>
               </motion.div>
 
-              {/* Hackathon 2 */}
+              {/* Chainlink Fall 2022 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <div className="flex items-center mb-4">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    Google Vertex AI Hackathon
-                  </h3>
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/nodeless_link.png"
+                      alt="nodeless.link"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">Winner</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Chainlink Fall 2022 Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      December 2022
+                    </p>
+                  </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  July 2023
-                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
                   <li>
-                    Built a private AI solution on GCP for audio imports and
-                    meeting summarization using Chirp and Cloud Run.
+                    Project nodeless.link: Chainlink Top Quality Projects
+                    ($20,000)
                   </li>
+                  <li>Polygon Track - 1st Place ($10,000)</li>
                   <li>
-                    Implemented a langchain-enabled Chainlit interface using
-                    Gecko embeddings and Matching Engine.
-                  </li>
-                  <li>
-                    Replaced 3rd-party tools with Google-native services for
-                    security and compliance.
+                    Built serverless oracle platform for smart contract
+                    automation
                   </li>
                 </ul>
                 <a
-                  href="#"
-                  className="text-blue-600 dark:text-blue-400 font-medium"
+                  href="https://devpost.com/software/nodeless-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
                 >
-                  View Demo
+                  View Project
                 </a>
               </motion.div>
 
-              {/* Hackathon 3 */}
+              {/* AI21 Labs Hackathon */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <div className="flex items-center mb-4">
-                  <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mr-2">
-                    2ND PLACE
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    AI21 Labs Hackathon
-                  </h3>
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/projects/ai21-labs.jpg"
+                      alt="AI21 Labs"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">2nd Place</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        AI21 Labs Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      July 2023
+                    </p>
+                  </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  July 2023
-                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>Integrated AI21 models with no-code automation tools</li>
                   <li>
-                    Integrated AI21 language models with no-code tools like
-                    Zapier & Make.
-                  </li>
-                  <li>
-                    Enabled complex automation for non-tech users via J2 and
-                    Task-Specific APIs.
+                    Built complex workflows using J2 and Task-Specific APIs
                   </li>
                 </ul>
                 <a
-                  href="#"
-                  className="text-blue-600 dark:text-blue-400 font-medium"
+                  href="https://lablab.ai/event/plug-into-ai-with-ai21/state-change-labs/ai21-no-code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
                 >
-                  View Demo
+                  View Project
                 </a>
               </motion.div>
 
-              {/* Hackathon 4 */}
+              {/* Chainlink Spring 2022 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
               >
-                <div className="flex items-center mb-4">
-                  <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full mr-2">
-                    1ST PLACE
-                  </span>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                    Chainlink Fall Hackathon
-                  </h3>
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/projects/polynodes.jpg"
+                      alt="PolyNodes"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">2nd Place</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Chainlink Spring 2022 Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">May 2022</p>
+                  </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
-                  December 2022
-                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>Project PolyNodes: 2nd Place Overall</li>
+                  <li>Best DeFi Project Runner-up</li>
                   <li>
-                    Created a no-code platform linking smart contracts with
-                    off-chain webhooks via Chainlink Oracles.
-                  </li>
-                  <li>
-                    Used Xano, Moralis, and Netlify for back-end and on-chain
-                    listening.
+                    Built protocol for immutable, dynamic documents using IPFS
                   </li>
                 </ul>
                 <a
-                  href="#"
-                  className="text-blue-600 dark:text-blue-400 font-medium"
+                  href="https://devpost.com/software/polynodes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
                 >
-                  View Demo
+                  View Project
+                </a>
+              </motion.div>
+
+              {/* Supernova Hackathon */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/dfinity.png"
+                      alt="DFINITY"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">4th Place</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Supernova Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      June 2022
+                    </p>
+                  </div>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>Project DeTi: 4th Place in Blue Sky Category</li>
+                  <li>
+                    Built decentralized time scheduling service on Internet
+                    Computer
+                  </li>
+                  <li>
+                    Implemented using Azle & TypeScript for WASM compilation
+                  </li>
+                </ul>
+                <a
+                  href="https://devpost.com/software/decentralized-time"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  View Project
+                </a>
+              </motion.div>
+
+              {/* Google Vertex AI */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/projects/vertex-ai.jpg"
+                      alt="Google Vertex AI"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Google Vertex AI Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      July 2023
+                    </p>
+                  </div>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>
+                    Built private AI solution for audio processing and
+                    summarization
+                  </li>
+                  <li>Implemented Langchain interface with Gecko embeddings</li>
+                </ul>
+                <a
+                  href="https://lablab.ai/event/google-vertex-ai-hackathon/state-change-labs/private-ai-for-gcp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  View Project
                 </a>
               </motion.div>
             </div>
