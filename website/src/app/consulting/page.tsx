@@ -10,10 +10,26 @@ import {
   FiClock,
   FiArrowRight,
 } from "react-icons/fi";
+import Script from "next/script";
 
 export default function Consulting() {
   return (
     <MainLayout>
+      {/* Cal.com Scripts */}
+      <Script id="cal-script" strategy="afterInteractive">
+        {`
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+          
+          // Initialize 30-minute meetings
+          Cal("init", "30min", {origin:"https://cal.com"});
+          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+          
+          // Initialize 60-minute meetings
+          Cal("init", "60min", {origin:"https://cal.com"});
+          Cal.ns["60min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        `}
+      </Script>
+
       <div className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
@@ -154,6 +170,17 @@ export default function Consulting() {
                     challenges, goals, and requirements. This helps me tailor a
                     solution specific to your needs.
                   </p>
+                  <div className="mt-4">
+                    <button
+                      data-cal-link="akshay-rakheja/30min"
+                      data-cal-namespace="30min"
+                      data-cal-config='{"layout":"month_view"}'
+                      className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors text-sm"
+                    >
+                      Schedule Free Consultation{" "}
+                      <FiArrowRight className="ml-2" />
+                    </button>
+                  </div>
                 </motion.div>
 
                 <motion.div
@@ -211,7 +238,8 @@ export default function Consulting() {
                   Book a Consultation
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-8">
-                  Ready to discuss your project? Schedule a call to get started.
+                  Ready to discuss your project? Choose the best option for your
+                  needs:
                 </p>
 
                 <div className="mb-8">
@@ -228,24 +256,48 @@ export default function Consulting() {
                   </div>
                 </div>
 
-                <div>
+                <div className="space-y-6">
                   <h3 className="flex items-center text-xl font-bold text-gray-900 dark:text-white mb-4">
-                    <FiCalendar className="mr-2" /> Schedule a Call
+                    <FiCalendar className="mr-2" /> Choose Your Session
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-6">
-                    Select a time slot for a 60-minute discovery call through my
-                    Calendly scheduling page. No payment is required for the
-                    initial consultation.
-                  </p>
 
-                  <a
-                    href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
-                  >
-                    Schedule a Meeting <FiArrowRight className="ml-2" />
-                  </a>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {/* 30-min Quick Call */}
+                    <div className="bg-white dark:bg-gray-700 p-4 rounded-md">
+                      <h4 className="font-bold text-gray-900 dark:text-white mb-2">
+                        30-Min Quick Call
+                      </h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Perfect for initial consultations and specific questions
+                      </p>
+                      <button
+                        data-cal-link="akshay-rakheja/30min"
+                        data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view"}'
+                        className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors text-sm"
+                      >
+                        Book Quick Call <FiArrowRight className="ml-2" />
+                      </button>
+                    </div>
+
+                    {/* 60-min Deep Dive */}
+                    <div className="bg-white dark:bg-gray-700 p-4 rounded-md">
+                      <h4 className="font-bold text-gray-900 dark:text-white mb-2">
+                        60-Min Deep Dive
+                      </h4>
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+                        Ideal for technical discussions and project scoping
+                      </p>
+                      <button
+                        data-cal-link="akshay-rakheja/60min"
+                        data-cal-namespace="60min"
+                        data-cal-config='{"layout":"month_view"}'
+                        className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors text-sm"
+                      >
+                        Book Deep Dive <FiArrowRight className="ml-2" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
 

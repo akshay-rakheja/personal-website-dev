@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import MainLayout from "@/components/layout/MainLayout";
 import Testimonials from "@/components/Testimonials";
+import Script from "next/script";
 import {
   FiArrowRight,
   FiCode,
@@ -17,6 +18,15 @@ import {
 export default function Home() {
   return (
     <MainLayout>
+      {/* Cal.com Script */}
+      <Script id="cal-script" strategy="afterInteractive">
+        {`
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", "30min", {origin:"https://cal.com"});
+          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        `}
+      </Script>
+
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
@@ -45,12 +55,12 @@ export default function Home() {
                     About Me <FiArrowRight className="ml-2" />
                   </Link>
                   <a
-                    href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium transition-colors"
+                    data-cal-link="akshay-rakheja/30min"
+                    data-cal-namespace="30min"
+                    data-cal-config='{"layout":"month_view"}'
                   >
-                    Schedule a Call <FiCalendar className="ml-2" />
+                    Schedule a Free Call <FiCalendar className="ml-2" />
                   </a>
                   <Link href="/projects" passHref legacyBehavior>
                     <a className="inline-flex items-center bg-white hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-md font-medium transition-colors">
@@ -148,46 +158,6 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonials />
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-blue-600 dark:bg-blue-700">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-white mb-6"
-            >
-              Let&apos;s Work Together
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-xl text-blue-100 mb-8"
-            >
-              Ready to build something amazing? I&apos;m available for
-              consulting and freelance projects.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <Link
-                href="/consulting"
-                className="inline-flex items-center bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-md font-medium text-lg transition-colors"
-              >
-                Schedule a Consultation <FiArrowRight className="ml-2" />
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </MainLayout>
   );
 }

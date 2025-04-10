@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiAward, FiCalendar } from "react-icons/fi";
+import Script from "next/script";
 
 // Commenting out client testimonials interface and data until needed
 /*
@@ -146,6 +147,15 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function Testimonials() {
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      {/* Cal.com Script */}
+      <Script id="cal-script" strategy="afterInteractive">
+        {`
+          (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", "30min", {origin:"https://cal.com"});
+          Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+        `}
+      </Script>
+
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <motion.h2
@@ -294,14 +304,14 @@ export default function Testimonials() {
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
             Let&apos;s discuss how we can bring your ideas to life
           </p>
-          <a
-            href="https://calendly.com/akshay-rakheja/60-minutes-meeting"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            data-cal-link="akshay-rakheja/30min"
+            data-cal-namespace="30min"
+            data-cal-config='{"layout":"month_view"}'
             className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-md font-medium text-lg transition-colors"
           >
             Schedule a Free Consultation <FiCalendar className="ml-2" />
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>
