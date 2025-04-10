@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiAward, FiCalendar, FiLinkedin } from "react-icons/fi";
+import { FiAward, FiCalendar } from "react-icons/fi";
 
 // Commenting out client testimonials interface and data until needed
 /*
