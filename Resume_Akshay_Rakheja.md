@@ -7,7 +7,7 @@ Akshay Rakheja
 
 Summary
 
-Innovative software engineer with a Master’s in AI/ML and a passion for building products that drive business value through AI and automation. Proven track record of delivering impactful solutions, including 8 hackathon wins in AI and blockchain. Skilled in enhancing operational efficiency and user experience through advanced AI models and automation platforms. Currently at CGI, developing AI tools that streamline processes and improve decision-making.
+Innovative software engineer with a Master's in AI/ML and a passion for building products that drive business value through AI and automation. Proven track record of delivering impactful solutions, including 8 hackathon wins in AI and blockchain. Skilled in enhancing operational efficiency and user experience through advanced AI models and automation platforms. Currently at CGI, developing AI tools that streamline processes and improve decision-making.
 
 Skills
  • AI/ML: Vertex AI, RAG, Langchain, CrewAI, PyTorch, MCP, Pinecone
@@ -20,7 +20,7 @@ CGI – Toronto, Ontario
 
 Sr. Software Engineer
 Nov 2024 – Present
- • Developed and maintained experience APIs using Moveworks’ Creator Studio, enhancing system scalability and user experience through seamless ServiceNow integration.
+ • Developed and maintained experience APIs using Moveworks' Creator Studio, enhancing system scalability and user experience through seamless ServiceNow integration.
  • Integrated REST APIs with Moveworks to enhance data aggregation, automate workflows, and improve system efficiency.
  • Led periodic access review campaigns with cross-functional teams, improving compliance and data security.
 
@@ -90,7 +90,7 @@ Pinecone Hackathon – Jun 2023
  • Used Xano, Moralis, and Netlify for back-end and on-chain listening.
 🔗 Demo
 
-ETHGlobal HackFS – Top 10 Finalist & Grant, Jul 2022
+ETHGlobal HackFS – Finalist & Grant, Jul 2022
  • Built Polydocs, a protocol for immutable, dynamic documents using IPFS + Polygon.
  • Supported ERC20/721/1155 contracts and markdown-based renderers for DeFi/NFT/DAO use cases.
 🔗 Demo

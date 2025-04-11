@@ -261,70 +261,13 @@ export default function About() {
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
                   <li>
-                    Built a React+TS web app for semantically searchable
-                    chessboxing clips
+                    Built a React+TS web app for searchable chessboxing clips
                   </li>
-                  <li>
-                    Integrated Marengo models for precise search and
-                    AI-generated music
-                  </li>
+                  <li>Integrated Marengo video understanding models</li>
+                  <li>Used FFmpeg for AI-generated music</li>
                 </ul>
                 <a
                   href="https://lablab.ai/event/twelve-labs-weekend-hackathon/state-change-labs/grandmaster-gladiators-chessboxing-ai-insights"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
-                >
-                  View Project
-                </a>
-              </motion.div>
-
-              {/* Chainlink Fall 2022 */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
-              >
-                <div className="flex items-start mb-4">
-                  <div className="hidden sm:block flex-shrink-0 mr-4">
-                    <Image
-                      src="/nodeless_link.png"
-                      alt="nodeless.link"
-                      width={50}
-                      height={50}
-                      className="rounded"
-                    />
-                  </div>
-                  <div className="flex-grow">
-                    <div className="flex items-center mb-1">
-                      <div className="flex items-center text-yellow-500 mr-2">
-                        <FaTrophy className="mr-1" />
-                        <span className="text-sm font-semibold">Winner</span>
-                      </div>
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                        Chainlink Fall 2022 Hackathon
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      December 2022
-                    </p>
-                  </div>
-                </div>
-                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
-                  <li>
-                    Project nodeless.link: Chainlink Top Quality Projects
-                    ($20,000)
-                  </li>
-                  <li>Polygon Track - 1st Place ($10,000)</li>
-                  <li>
-                    Built serverless oracle platform for smart contract
-                    automation
-                  </li>
-                </ul>
-                <a
-                  href="https://devpost.com/software/nodeless-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -367,10 +310,9 @@ export default function About() {
                   </div>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>2nd Place Overall</li>
+                  <li>Best AI Integration Solution</li>
                   <li>Integrated AI21 models with no-code automation tools</li>
-                  <li>
-                    Built complex workflows using J2 and Task-Specific APIs
-                  </li>
                 </ul>
                 <a
                   href="https://lablab.ai/event/plug-into-ai-with-ai21/state-change-labs/ai21-no-code"
@@ -382,7 +324,7 @@ export default function About() {
                 </a>
               </motion.div>
 
-              {/* Chainlink Spring 2022 */}
+              {/* Chainlink Fall 2022 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -393,8 +335,8 @@ export default function About() {
                 <div className="flex items-start mb-4">
                   <div className="hidden sm:block flex-shrink-0 mr-4">
                     <Image
-                      src="/projects/polynodes.jpg"
-                      alt="PolyNodes"
+                      src="/nodeless_link.png"
+                      alt="nodeless.link"
                       width={50}
                       height={50}
                       className="rounded"
@@ -404,24 +346,24 @@ export default function About() {
                     <div className="flex items-center mb-1">
                       <div className="flex items-center text-yellow-500 mr-2">
                         <FaTrophy className="mr-1" />
-                        <span className="text-sm font-semibold">2nd Place</span>
+                        <span className="text-sm font-semibold">1st Place</span>
                       </div>
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                        Chainlink Spring 2022 Hackathon
+                        Chainlink Fall 2022 Hackathon
                       </h3>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400">May 2022</p>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      December 2022
+                    </p>
                   </div>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
-                  <li>Project PolyNodes: 2nd Place Overall</li>
-                  <li>Best DeFi Project Runner-up</li>
-                  <li>
-                    Built protocol for immutable, dynamic documents using IPFS
-                  </li>
+                  <li>Chainlink Top Quality Projects - $20,000</li>
+                  <li>Polygon - 1st Place - $10,000</li>
+                  <li>Built with Chainlink, React & Solidity</li>
                 </ul>
                 <a
-                  href="https://devpost.com/software/polynodes"
+                  href="https://devpost.com/software/nodeless-link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -430,7 +372,106 @@ export default function About() {
                 </a>
               </motion.div>
 
-              {/* Supernova Hackathon */}
+              {/* Polygon Build It */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/buidl_it_logo.png"
+                      alt="PolyDocs"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">Winner</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Polygon Build It Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      August 2022
+                    </p>
+                  </div>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>Pool Prize Winner</li>
+                  <li>IPFS/Filecoin Sponsor Prize Winner</li>
+                  <li>Built decentralized document management system</li>
+                </ul>
+                <a
+                  href="https://devpost.com/software/jonsnow-eth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  View Project
+                </a>
+              </motion.div>
+
+              {/* ETHGlobal HackFS */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/eth_global_logo.png"
+                      alt="PolyDocs"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">Finalist</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        ETHGlobal HackFS
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      July 2022
+                    </p>
+                  </div>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>ETHGlobal HackFS Finalist</li>
+                  <li>Top 5 Project by Polygon</li>
+                  <li>
+                    Built protocol for immutable documents using IPFS and
+                    Polygon
+                  </li>
+                </ul>
+                <a
+                  href="https://ethglobal.com/showcase/polydocs-jw5s5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  View Project
+                </a>
+              </motion.div>
+
+              {/* Supernova */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -464,14 +505,9 @@ export default function About() {
                   </div>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
-                  <li>Project DeTi: 4th Place in Blue Sky Category</li>
-                  <li>
-                    Built decentralized time scheduling service on Internet
-                    Computer
-                  </li>
-                  <li>
-                    Implemented using Azle & TypeScript for WASM compilation
-                  </li>
+                  <li>4th Place - Blue Sky Category</li>
+                  <li>Built with Azle & TypeScript</li>
+                  <li>Implemented on Internet Computer blockchain</li>
                 </ul>
                 <a
                   href="https://devpost.com/software/decentralized-time"
@@ -483,7 +519,7 @@ export default function About() {
                 </a>
               </motion.div>
 
-              {/* Google Vertex AI */}
+              {/* Chainlink Spring 2022 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -494,8 +530,8 @@ export default function About() {
                 <div className="flex items-start mb-4">
                   <div className="hidden sm:block flex-shrink-0 mr-4">
                     <Image
-                      src="/projects/vertex-ai.jpg"
-                      alt="Google Vertex AI"
+                      src="/polynodes.png"
+                      alt="PolyNodes"
                       width={50}
                       height={50}
                       className="rounded"
@@ -503,24 +539,72 @@ export default function About() {
                   </div>
                   <div className="flex-grow">
                     <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">2nd Place</span>
+                      </div>
                       <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                        Google Vertex AI Hackathon
+                        Chainlink Spring 2022 Hackathon
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400">May 2022</p>
+                  </div>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
+                  <li>2nd Place Overall</li>
+                  <li>Best DeFi Project Runner-up</li>
+                  <li>Created a no-code platform with Chainlink Oracles</li>
+                </ul>
+                <a
+                  href="https://devpost.com/software/polynodes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                >
+                  View Project
+                </a>
+              </motion.div>
+
+              {/* Web3Con */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="flex items-start mb-4">
+                  <div className="hidden sm:block flex-shrink-0 mr-4">
+                    <Image
+                      src="/web3con.png"
+                      alt="Time Limited Tokens"
+                      width={50}
+                      height={50}
+                      className="rounded"
+                    />
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-1">
+                      <div className="flex items-center text-yellow-500 mr-2">
+                        <FaTrophy className="mr-1" />
+                        <span className="text-sm font-semibold">3rd Place</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                        Web3Con by Developer DAO
                       </h3>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400">
-                      July 2023
+                      March 2022
                     </p>
                   </div>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-4">
-                  <li>
-                    Built private AI solution for audio processing and
-                    summarization
-                  </li>
-                  <li>Implemented Langchain interface with Gecko embeddings</li>
+                  <li>3rd Place in Sponsor Prize Category</li>
+                  <li>$5,000 Protocol Labs Grant for EIP Development</li>
+                  <li>Developed Time-Limited Token standard</li>
                 </ul>
                 <a
-                  href="https://lablab.ai/event/google-vertex-ai-hackathon/state-change-labs/private-ai-for-gcp"
+                  href="https://devpost.com/software/time-limited-tokens"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 font-medium hover:underline"

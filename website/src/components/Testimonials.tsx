@@ -51,23 +51,19 @@ const hackathonWins: HackathonWin[] = [
     position: "1st Place",
     platform: "lablab.ai",
     link: "https://lablab.ai/event/twelve-labs-weekend-hackathon/state-change-labs/grandmaster-gladiators-chessboxing-ai-insights",
-    date: "2024",
+    date: "May 2024",
     image: "/projects/twelve-labs.jpg",
   },
   {
     id: 2,
-    event: "HackFS 2022",
-    project: "PolyDocs",
-    position: "Top 10 Finalist",
-    platform: "ETHGlobal",
-    link: "https://ethglobal.com/showcase/polydocs-1oas6",
-    date: "2022",
-    image: "/eth_global_logo.png",
-    achievements: [
-      "ETHGlobal HackFS Finalist",
-      "Spheron — Top 10 project",
-      "Polygon — Top 5",
-    ],
+    event: "AI21 Labs Hackathon",
+    project: "AI21 No-Code Integration",
+    position: "2nd Place",
+    platform: "lablab.ai",
+    link: "https://lablab.ai/event/plug-into-ai-with-ai21/state-change-labs/ai21-no-code",
+    date: "July 2023",
+    image: "/projects/ai21-labs.jpg",
+    achievements: ["2nd Place Overall", "Best AI Integration Solution"],
   },
   {
     id: 3,
@@ -76,7 +72,7 @@ const hackathonWins: HackathonWin[] = [
     position: "1st Place",
     platform: "Chainlink",
     link: "https://devpost.com/software/nodeless-link",
-    date: "2022",
+    date: "December 2022",
     image: "/nodeless_link.png",
     achievements: [
       "Chainlink Top Quality Projects - $20,000",
@@ -86,25 +82,33 @@ const hackathonWins: HackathonWin[] = [
   },
   {
     id: 4,
-    event: "Chainlink Spring 2022 Hackathon",
-    project: "PolyNodes",
-    position: "2nd Place",
-    platform: "Chainlink",
-    link: "https://devpost.com/software/polynodes",
-    date: "2022",
-    image: "/projects/polynodes.jpg",
-    achievements: ["2nd Place Overall", "Best DeFi Project Runner-up"],
+    event: "Polygon Build It Hackathon",
+    project: "PolyDocs",
+    position: "Winner",
+    platform: "Polygon",
+    link: "https://devpost.com/software/jonsnow-eth",
+    date: "August 2022",
+    image: "/buidl_it_logo.png",
+    achievements: [
+      "Pool Prize Winner",
+      "IPFS/Filecoin Sponsor Prize Winner",
+      "Built decentralized document management system",
+    ],
   },
   {
     id: 5,
-    event: "AI21 Labs Hackathon",
-    project: "AI21 No-Code Integration",
-    position: "2nd Place",
-    platform: "lablab.ai",
-    link: "https://lablab.ai/event/plug-into-ai-with-ai21/state-change-labs/ai21-no-code",
-    date: "2023",
-    image: "/projects/ai21-labs.jpg",
-    achievements: ["2nd Place Overall", "Best AI Integration Solution"],
+    event: "ETHGlobal HackFS",
+    project: "PolyDocs",
+    position: "Finalist",
+    platform: "ETHGlobal",
+    link: "https://ethglobal.com/showcase/polydocs-jw5s5",
+    date: "July 2022",
+    image: "/eth_global_logo.png",
+    achievements: [
+      "ETHGlobal HackFS Finalist",
+      "Top 5 Project by Polygon",
+      "Built protocol for immutable documents using IPFS and Polygon",
+    ],
   },
   {
     id: 6,
@@ -113,11 +117,37 @@ const hackathonWins: HackathonWin[] = [
     position: "4th Place",
     platform: "DFINITY",
     link: "https://devpost.com/software/decentralized-time",
-    date: "2022",
+    date: "June 2022",
     image: "/dfinity.png",
     achievements: [
       "4th Place - Blue Sky Category",
       "Built with Azle & TypeScript",
+    ],
+  },
+  {
+    id: 7,
+    event: "Chainlink Spring 2022 Hackathon",
+    project: "PolyNodes",
+    position: "2nd Place",
+    platform: "Chainlink",
+    link: "https://devpost.com/software/polynodes",
+    date: "May 2022",
+    image: "/polynodes.png",
+    achievements: ["2nd Place Overall", "Best DeFi Project Runner-up"],
+  },
+  {
+    id: 8,
+    event: "Web3Con by Developer DAO",
+    project: "Time Limited Tokens",
+    position: "3rd Place",
+    platform: "Developer DAO",
+    link: "https://devpost.com/software/time-limited-tokens",
+    date: "March 2022",
+    image: "/web3con.png",
+    achievements: [
+      "3rd Place in Sponsor Prize Category",
+      "$5,000 Protocol Labs Grant for EIP Development",
+      "Developed Time-Limited Token standard",
     ],
   },
 ];
@@ -255,9 +285,15 @@ export default function Testimonials() {
                   <h4 className="font-bold text-gray-900 dark:text-white mb-2">
                     {win.project}
                   </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                    {win.event}
-                  </p>
+                  <div className="flex items-center mb-4">
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {win.event}
+                    </p>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      {win.date}
+                    </p>
+                  </div>
                   {win.achievements && (
                     <div className="mb-4">
                       {win.achievements.map((achievement, index) => (
