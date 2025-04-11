@@ -171,8 +171,8 @@ export default function Consulting() {
                         30-Min Discovery Call
                       </h4>
                       <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                        Let's discuss your project requirements and explore how
-                        I can help
+                        Let&apos;s discuss your project requirements and explore
+                        how I can help
                       </p>
                       <button
                         data-cal-link="akshay-rakheja/30min"
