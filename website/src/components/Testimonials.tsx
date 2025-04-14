@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import { FiAward, FiCalendar } from "react-icons/fi";
 import Script from "next/script";
 
-// Commenting out client testimonials interface and data until needed
-/*
 interface Testimonial {
   id: number;
   name: string;
@@ -16,19 +14,17 @@ interface Testimonial {
   linkedinUrl?: string;
 }
 
-// Initial testimonial data - you can update this as you get more
+// Client testimonial data
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "John Doe",
-    position: "CTO",
-    company: "TechCorp",
-    text: "Working with Akshay was transformative for our AI initiatives. His expertise in RAG and LangChain helped us build a solution that exceeded our expectations.",
+    name: "Adam Miko",
+    position: "Founder",
+    company: "Echora.ai",
+    text: "Akshay has been a driving force in advancing our product and streamlining our development process. His deep technical expertise, paired with a collaborative and forward-thinking approach, made him an essential part of our team. He navigates complex challenges with ease and always keeps the end user in mind - bringing a rare combination of logic, intuition, and empathy to every decision. His instincts are consistently on point, and his input has meaningfully elevated the value of our product. I can't recommend working with him highly enough.",
     rating: 5,
-    linkedinUrl: "https://linkedin.com/in/johndoe",
   },
 ];
-*/
 
 interface HackathonWin {
   id: number;
@@ -152,8 +148,6 @@ const hackathonWins: HackathonWin[] = [
   },
 ];
 
-// Commenting out StarRating component until needed
-/*
 const StarRating = ({ rating }: { rating: number }) => {
   return (
     <div className="flex items-center gap-1">
@@ -172,7 +166,6 @@ const StarRating = ({ rating }: { rating: number }) => {
     </div>
   );
 };
-*/
 
 export default function Testimonials() {
   return (
@@ -198,62 +191,66 @@ export default function Testimonials() {
             Success Stories & Achievements
           </motion.h2>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Validated through hackathon wins and innovative solutions
+            Client testimonials and hackathon achievements that showcase my
+            expertise and impact.
           </p>
         </div>
 
-        {/* Client Testimonials - Temporarily hidden
-        {testimonials.length > 0 && (
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-              Client Testimonials
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {testimonials.map((testimonial) => (
-                <motion.div
-                  key={testimonial.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  viewport={{ once: true }}
-                  className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6"
-                >
-                  <div className="flex items-center mb-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <h4 className="font-bold text-gray-900 dark:text-white">
-                          {testimonial.name}
-                        </h4>
-                        {testimonial.linkedinUrl && (
-                          <a
-                            href={testimonial.linkedinUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:text-blue-700 dark:text-blue-400"
-                          >
-                            <FiLinkedin className="w-4 h-4" />
-                          </a>
-                        )}
-                      </div>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {testimonial.position}
-                        {testimonial.company && ` at ${testimonial.company}`}
-                      </p>
-                    </div>
-                    <StarRating rating={testimonial.rating} />
+        {/* Client Testimonials Section */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Client Testimonials
+          </h3>
+          <div className="grid grid-cols-1 gap-8">
+            {testimonials.map((testimonial) => (
+              <motion.div
+                key={testimonial.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+              >
+                <div className="mb-4">
+                  <StarRating rating={testimonial.rating} />
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-6 italic">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
+                <div className="flex items-center">
+                  <div className="flex-1">
+                    <h4 className="font-bold text-gray-900 dark:text-white">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {testimonial.position}
+                      {testimonial.company && ` at ${testimonial.company}`}
+                    </p>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    &ldquo;{testimonial.text}&rdquo;
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+                  {testimonial.linkedinUrl && (
+                    <a
+                      href={testimonial.linkedinUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700"
+                    >
+                      <svg
+                        className="w-6 h-6"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
           </div>
-        )}
-        */}
+        </div>
 
-        {/* Hackathon Wins */}
-        <div>
+        {/* Hackathon Achievements Section */}
+        <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Hackathon Achievements
           </h3>
